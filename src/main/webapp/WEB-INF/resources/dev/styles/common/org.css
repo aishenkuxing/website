@@ -1,0 +1,303 @@
+﻿   @charset "UTF-8";
+ @charset "UTF-8";
+*, *:before, *:after {
+  box-sizing: border-box; }
+body{
+	margin:0;
+}
+.nd-department-node{
+	width:150px;
+	margin: 0 auto;
+	padding:0;
+	position:relative;
+	box-sizing:content-box;
+	 }
+.nd-department-node *{
+	 box-sizing:content-box;
+	font-size:14px;
+	color:#313131;
+	margin:0;
+	text-align:center;
+    word-break:break-all;
+    word-wrap:break-word;
+	moz-user-select: -moz-none; 
+	}
+table {
+       border-collapse: separate;
+}
+.nd-department-font{
+	margin-top:6px;
+	}
+.zuzhijiagou{
+    font-size: 20px;
+	border-radius:18px;
+	background-color:#5ab8f5;
+	color:#fff;
+	width: 30px;
+    height: 30px;
+	line-height:30px;
+	display:inline-block;
+	}
+.jia{
+	font-size: 20px;
+	}
+.nd-node-display{
+	margin-top:3px;
+	}
+/* Custom node styling */
+.jOrgChart .node {
+	font-size 			: 14px;
+	background-color 	: transparent;
+	border:2px transparent dashed;
+	color 				: #F38630;
+	-moz-border-radius 	: 8px;
+	height:75px;
+}
+.jOrgChart .node p{
+	font-family 	: tahoma;
+	font-size 		: 10px;
+	line-height 	: 11px;
+	padding 		: 2px;
+}
+.nd-department-node dt{
+	margin-top:2px;
+	padding-top:2px;
+	background-color:transparent;
+	position:relative;
+	z-index:0;
+}
+
+.nd-department-node dt:hover i{
+	background-color:#0aa5ff;
+	cursor:move;
+	}
+.nd-department-node-hover dd{
+	color:#0aa5ff;
+	}
+.nd-department-node-hover dt i{
+	background-color:#0aa5ff;
+	border:3px solid #0aa5ff;
+	cursor:move;
+	}
+.drop-hover dt i{
+	background-color:#0aa5ff;
+	border:3px solid #0aa5ff;
+	cursor:move;
+	}
+.drop-hover dd{
+	color:#0aa5ff;
+	}
+.container{
+	zoom:1/9;
+	-moz-user-select: none; 
+	-o-user-select:none; 
+	-khtml-user-select:none; /* you could also put this in a class */ 
+	-webkit-user-select:none;/* and add the CSS class here instead */ 
+	-ms-user-select:none; 
+	user-select:none;/**禁止选中文字*/
+    position:relative;
+	}
+.nd-drag-dode dt i{
+	background-color:#F99;
+	border:3px solid #F99;
+	}
+.nd-drag-dode dd{
+	color:#F99;
+	}
+.nd-node-plus{
+	display:inline-block;
+    width:20px;
+	height:20px;
+	line-height:20px;
+	background:url(../images/icon_add_list.png) center center no-repeat;
+	cursor:pointer;
+	 z-index: 2;
+	}	
+.nd-node-minus{
+	display:inline-block;
+    width:20px;
+	height:20px;
+	line-height:20px;
+	background:url(../images/icon_tree_delete.png) center center no-repeat;
+	cursor:pointer;
+	z-index: 2;
+	}
+.nd-node-handle{
+	position:absolute;
+	top:2px;
+	left:93px;
+	height:20px;
+	min-width:50px;
+	padding:5px 5px 5px 0;
+	z-index:1;
+	background-color:#e5e5e5;
+	border-radius:20px;
+	display:none;
+	}
+.nd-department-node dt.zuzhijiagou-hover i:after{
+	position: absolute;
+    right:45px;
+    top:2px;
+    height: 30px;
+    width: 30px;
+    content:"";
+    background:#e5e5e5;
+	z-index:-1;
+	} 
+.nd-department-node dt.zuzhijiagou-hover + .nd-node-handle{ display:block;}
+
+.nd-node-handle i:hover{ opacity:0.8;}
+/*add dom*/
+.btn-tree{ display:inline-block;width:20px; height:20px; line-height:20px; background-position:center center; background-repeat:no-repeat;}
+.tree-open{ 
+    background-image:url(../images/icon_add_list.png);
+}
+.tree-close{ background-image:url(../images/icon_tree_hide.png);}
+.node-ui-text {
+	height: 20px;
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	line-height: 19px;
+	color: #555;
+	outline: 0;
+    font-size:14px;
+    width:100px;
+}
+.node-ui-text:focus {
+	border-color: #00a0e9
+}
+.node-sort-right {
+    float:right;
+}
+.node-sort-left {
+    float:left;
+}
+.pannel-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+          transition: opacity 0.3s; }
+
+ .pannel-container {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+.modal-content{
+	width:100%;
+	height:100%;
+	position:relative;	
+	}
+.org-container .build-tree-head {
+  height: 40px;
+  position: relative;
+  font-size: 12px;
+  line-height: 40px;
+  color: #59baf5;
+  margin-top: -6px; }
+  .org-container .build-tree-head .r {
+    position: absolute;
+    right: 30px;
+    top: 0; }
+  .org-container .build-tree-head .btn-scale {
+    vertical-align: middle;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    line-height: 18px;
+    text-align: center;
+    background-color: #999;
+    color: #fff;
+    margin-left: 6px;
+    border-radius: 4px; }
+    .org-container .build-tree-head .btn-scale:hover {
+      background-color: #777; }
+    .org-container .build-tree-head .btn-scale:after {
+      font-weight: 700;
+      font-size: 18px; }
+    .org-container .build-tree-head .btn-scale.up:after {
+      content: '+'; }
+    .org-container .build-tree-head .btn-scale.down:after {
+      content: '-'; }
+    .org-container .build-tree-head .btn-scale.disable {
+      color: #f8f8f8;
+      background-color: #ccc;
+      cursor: no-drop; }
+.com-container {
+  position: absolute;
+  left: 25px;
+  top: 10px;
+  right: 0;
+  bottom: 10px;
+  overflow:hidden;
+}
+  .ui-btn {
+  display: inline-block;
+  min-width: 100px;
+  height: 30px;
+  padding: 0 15px;
+  line-height: 31px;
+  text-align: center;
+  color: #ff6900; }
+  .ui-btn:hover {
+    color: #e65e00; }
+  .ui-btn[data-view="style1"] {
+    background-color: #ff6900;
+    color: #fff; }
+    .ui-btn[data-view="style1"]:hover {
+      background-color: #e65e00; }
+  .ui-btn[data-view="style2"] {
+    background-color: #59baf5;
+    color: #fff; }
+    .ui-btn[data-view="style2"]:hover {
+      background-color: #41b0f4; }
+  .ui-btn[data-view="style3"] {
+    background-color: #ff5967;
+    color: #fff; }
+    .ui-btn[data-view="style3"]:hover {
+      background-color: #ff4050; }
+  .ui-btn[data-view="style4"] {
+    background-color: transparent;
+    color: #a1a19f;
+    border: 1px solid #a1a19f; }
+    .ui-btn[data-view="style4"]:hover {
+      color: #888885;
+      border-color: #888885; }
+    .ml10 {
+    margin-left: 10px;
+}
+    .com-container .container-head {
+    height: 60px;
+    position: relative;
+    line-height: 60px; }
+    .com-container .container-head .r {
+      position: absolute;
+      right: 20px;
+      top: 0; }
+    .com-container .container-head .ui-btn {
+      border-radius: 10px; }
+  .com-container .container-title {
+    font-size: 16px;
+    color: #59baf5; }
+  .org-container .build-tree-canvas {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  right: 20px;
+  bottom: 0px;
+  overflow: auto; }
+.org-container .build-tree-foot {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  text-align: right; }

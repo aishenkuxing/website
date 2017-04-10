@@ -1,0 +1,276 @@
+/*通用*/
+.error, .red {
+    color: red;
+}
+/*首页*/
+﻿.home-calendar-group .nd-datepicker-container {
+    height: 0;
+}
+
+.home-calendar-group .nd-datepicker-container .ui-text {
+    display: none;
+}
+
+.home-calendar-group .nd-datepicker-container {
+    border: 0;
+}
+
+    .home-calendar-group .nd-datepicker-container .ui-calendar {
+        top: -20px;
+    }
+
+.home-calendar-group .ui-calendar-tab .start, .home-calendar-group .ui-calendar-tab .end {
+    background-color: #59baf5;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.home-calendar-group .ui-calendar-tab .between {
+    border: 1px solid #59baf5;
+    line-height: 1.9;
+    border-radius: 50%;
+    color: #00a0e9;
+}
+
+.home-aside-tool .announce-list h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*部门选择控件*/
+.ui-memberpicker {
+    padding: 0;
+}
+
+/*人员列表*/
+.org-list-group .member-list-wrap a.disabled {
+    color: #a0a0a0;
+    border: 1px solid #a0a0a0;
+}
+
+    .org-list-group .member-list-wrap a.disabled:hover {
+        color: #a0a0a0;
+        border: 1px solid #a0a0a0;
+    }
+
+.org-list-group .com-operation-container .operation-list {
+    top: 35px !important;
+}
+
+/*组织架构左侧树菜单操作按钮图片定位错误,整合时去掉路径中org*/
+.org-node-group .icon-menu {
+    background: url(../org/img/icon_list_view.png) center center no-repeat #fff !important;
+}
+
+.org-list-group .open .status-list {
+    display: block;
+}
+
+.org-list-group .status-list {
+    display: none;
+}
+
+/*增加样式 控件例行按钮样式*/
+.org-list-group .member-label > li {
+    padding: 0 5px !important;
+}
+/*修改列表表头在职状态下拉的位置*/
+.org-list-group .status-list {
+    top: 25px !important;
+}
+
+.imp {
+    width: 623px;
+    right: -623px;
+}
+
+.org-import-list .table-list p {
+    min-width: 40px;
+    min-height: 20px;
+}
+
+/****************审批列表样式***************/
+/*审批列表全部列表*/
+/*单据名称*/
+#esop-index-page .receipt-table-item .total-col-1 {
+    width: 10%;
+}
+/*单据概要*/
+#esop-index-page .receipt-table-item .total-col-2 {
+    width: 25%;
+    text-align: center;
+}
+/*申请人*/
+#esop-index-page .receipt-table-item .total-col-3 {
+    width: 10%;
+}
+/*单据状态*/
+#esop-index-page .receipt-table-item .total-col-4 {
+    width: 10%;
+}
+/*更新时间*/
+#esop-index-page .receipt-table-item .total-col-5 {
+    width: 20%;
+}
+/*最近审批人*/
+#esop-index-page .receipt-table-item .total-col-6 {
+    width: 10%;
+}
+/*附件*/
+#esop-index-page .receipt-table-item .total-col-7 {
+    width: 5%;
+}
+/*快捷操作*/
+#esop-index-page .receipt-table-item .total-col-8 {
+    width: 10%;
+    text-align: right;
+    padding-right: 2%;
+}
+/*审批列表我发起的列表*/
+/*单据名称*/
+#esop-index-page .receipt-table-item .mine-col-1 {
+    width: 10%;
+}
+/*单据概要*/
+#esop-index-page .receipt-table-item .mine-col-2 {
+    width: 30%;
+    text-align: center;
+}
+/*最近审批人*/
+#esop-index-page .receipt-table-item .mine-col-3 {
+    width: 10%;
+}
+/*更新时间*/
+#esop-index-page .receipt-table-item .mine-col-4 {
+    width: 20%;
+}
+/*单据状态*/
+#esop-index-page .receipt-table-item .mine-col-5 {
+    width: 10%;
+}
+/*附件*/
+#esop-index-page .receipt-table-item .mine-col-6 {
+    width: 10%;
+}
+/*快捷操作*/
+#esop-index-page .receipt-table-item .mine-col-7 {
+    width: 10%;
+    text-align: right;
+}
+/*审批列表我审批列表*/
+/*单据名称*/
+#esop-index-page .receipt-table-item .approval-col-1 {
+    width: 10%;
+}
+/*单据概要*/
+#esop-index-page .receipt-table-item .approval-col-2 {
+    width: 30%;
+    text-align: center;
+}
+/*申请人*/
+#esop-index-page .receipt-table-item .approval-col-3 {
+    width: 10%;
+}
+/*更新时间*/
+#esop-index-page .receipt-table-item .approval-col-4 {
+    width: 20%;
+}
+/*附件*/
+#esop-index-page .receipt-table-item .approval-col-5 {
+    width: 10%;
+}
+/*快捷操作*/
+#esop-index-page .receipt-table-item .approval-col-6 {
+    width: 20%;
+    text-align: right;
+}
+/*审批列表我审批已审列表*/
+/*单据名称*/
+#esop-index-page .receipt-table-item .already-col-1 {
+    width: 10%;
+}
+/*单据概要*/
+#esop-index-page .receipt-table-item .already-col-2 {
+    width: 30%;
+    text-align: center;
+}
+/*申请人*/
+#esop-index-page .receipt-table-item .already-col-3 {
+    width: 10%;
+}
+/*处理情况*/
+#esop-index-page .receipt-table-item .already-col-4 {
+    width: 10%;
+}
+/*更新时间*/
+#esop-index-page .receipt-table-item .already-col-5 {
+    width: 20%;
+}
+/*附件*/
+#esop-index-page .receipt-table-item .already-col-6 {
+    width: 10%;
+}
+/*快捷操作*/
+#esop-index-page .receipt-table-item .already-col-7 {
+    width: 10%;
+    text-align: right;
+}
+/*审批列表抄送我的列表*/
+/*单据名称*/
+#esop-index-page .receipt-table-item .copy-col-1 {
+    width: 10%;
+}
+/*单据概要*/
+#esop-index-page .receipt-table-item .copy-col-2 {
+    width: 25%;
+    text-align: center;
+}
+/*申请人*/
+#esop-index-page .receipt-table-item .copy-col-3 {
+    width: 10%;
+}
+/*更新时间*/
+#esop-index-page .receipt-table-item .copy-col-4 {
+    width: 20%;
+}
+/*单据状态*/
+#esop-index-page .receipt-table-item .copy-col-5 {
+    width: 10%;
+}
+/*阅读情况*/
+#esop-index-page .receipt-table-item .copy-col-6 {
+    width: 10%;
+}
+/*附件*/
+#esop-index-page .receipt-table-item .copy-col-7 {
+    width: 5%;
+}
+/*快捷操作*/
+#esop-index-page .receipt-table-item .copy-col-8 {
+    width: 10%;
+    text-align: right;
+}
+/*审批列表草稿箱列表*/
+/*单据名称*/
+#esop-index-page .receipt-table-item .draught-col-1 {
+    width: 10%;
+}
+/*单据概要*/
+#esop-index-page .receipt-table-item .draught-col-2 {
+    width: 40%;
+    text-align: center;
+}
+/*更新时间*/
+#esop-index-page .receipt-table-item .draught-col-3 {
+    width: 20%;
+}
+/*附件*/
+#esop-index-page .receipt-table-item .draught-col-4 {
+    width: 10%;
+}
+/*快捷操作*/
+#esop-index-page .receipt-table-item .draught-col-5 {
+    width: 20%;
+    text-align: right;
+}

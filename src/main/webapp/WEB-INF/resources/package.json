@@ -1,0 +1,32 @@
+{
+    "name": "web-resources",
+    "version": "0.1.0",
+    "description": "base, resources",
+    "main": "",
+    "author": "hjc",
+    "dependencies": {
+        "gulp": "latest",
+        "amd-optimize": "latest",
+        "gulp-less": "latest",
+        "gulp-concat": "latest",
+        "gulp-eslint": "latest",
+        "gulp-watch": "latest",
+        "gulp-clean":"latest",
+        "gulp-if": "latest",
+        "gulp-util": "latest",
+        "gulp-replace": "latest",
+        "gulp-rev-append":"latest",
+        "gulp-plumber": "latest",
+        "run-sequence": "latest",
+        "gulp-buffer":  "latest",
+        "event-stream": "latest",
+        "gulp-autoprefixer": "latest",
+        "gulp-minify-css": "latest",
+        "stream-combiner2": "latest",
+        "gulp-uglify": "latest",
+        "gulp-imagemin": "latest",
+        "gulp-changed": "latest",
+        "del": "latest",
+        "lodash": "latest"
+    }
+}

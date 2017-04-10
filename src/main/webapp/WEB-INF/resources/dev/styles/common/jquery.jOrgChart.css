@@ -1,0 +1,143 @@
+/* Basic styling */
+/* Draw the lines */
+.jOrgChart .line {
+  height                : 20px;
+  width                 : 2px;
+}
+dl {
+    cursor:pointer;
+}
+.jOrgChart .down {
+	background:none;
+	margin: 0px auto;
+    *width:3px;
+    width:2px\9\0;
+	border-right:1px dashed #c9c9c9;
+}
+.jOrgChart .top {
+  border-top:1px dashed #c9c9c9;
+}
+.jOrgChart .left {
+  border-right          : 1px dashed  transparent;
+  text-align:left;
+}
+.jOrgChart .right {
+  border-left           : 1px dashed #c9c9c9;
+  text-align:right;
+}
+/* node cell */
+.jOrgChart td {
+  text-align            : center;
+  vertical-align        : top;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+.jOrgChart td {
+    padding-left:0px;
+    padding-right:1px;
+}
+}
+@media all and (-ms-high-contrast:none) {
+.jOrgChart .down {
+    width:0px;
+}
+}
+.ie10 .jOrgChart .down {
+    width:3px;
+}
+
+@media all and (-ms-high-contrast:none) {
+*::-ms-backdrop,.jOrgChart td {
+    padding-left:1px;
+    padding-right:0px;
+}
+}
+/* The node */
+.jOrgChart .node {
+  background-color 		: #35363B;
+  display               : inline-block;
+  width                 : 158px;
+  height                : 60px;
+  z-index 				: 10;
+  margin               : 0 auto;
+  margin-left:40px;
+  margin-right:40px;
+}
+/* jQuery drag 'n drop */
+.drag-active {
+  border-style			: dotted;
+}
+.drop-hover {
+  border-style			: dashed ;
+  border-color 			: #c9c9c9 ;
+}
+.node-cell {
+    position:relative;
+}
+  .node-sort {
+    width: 20px;
+    border: 1px solid #000;
+    height: 75px;
+}
+.node-sort-left {
+    float: left;
+    left:-20px;
+}
+.node-sort.first-node {
+    left:5px;
+}
+.node-sort.last-node {
+    right:5px;
+}
+.node-sort {
+    width: 40px;
+    height: 40px;
+    border: 1px dashed #ccc;
+    border-radius: 50%;
+    position:absolute;
+    margin-top:5px;
+}
+
+.node-sort:before{
+  content:'';
+  width:0;
+  height:25px;
+  position:absolute;
+  left:50%;
+  bottom:100%;
+  margin-bottom:5px;
+  border-left:1px dashed #ccc;
+}
+
+.node-sort.first-node:after,
+.node-sort.last-node:after{
+  content:'';
+  width: 89px;
+  height:0;
+  position:absolute;
+  bottom:100%;
+  margin-bottom: 31px;
+  border-top:1px dashed #ccc;
+}
+
+.node-sort.first-node:after{
+  left: 50%;
+}
+
+.node-sort.last-node:after{
+  right: 50%;
+}
+
+.node-sort-right {
+    top:0px;
+    right:-20px;
+}
+.node-sort-on,.node-sort:hover {
+    border-color: #f00;
+}
+.node-sort.drop-hover {
+     border-color: #f00;
+}
+.node.drop-hover {
+  border-style			: dashed !important;
+  border-color 			: #c9c9c9 !important;
+}
