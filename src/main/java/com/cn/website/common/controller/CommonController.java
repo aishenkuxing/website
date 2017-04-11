@@ -17,4 +17,9 @@ public class CommonController {
 	public void index(){
 		//System.out.println(111);
 	}
+	
+	@RequestMapping("login")
+	public void login(){
+		//System.out.println(111);
+	}
 }
