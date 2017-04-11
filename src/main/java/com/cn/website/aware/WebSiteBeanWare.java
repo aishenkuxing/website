@@ -7,7 +7,6 @@ import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
-import com.cn.website.base.common.HelpClass;
 import com.cn.website.common.service.HomeService;
 import com.cn.website.common.service.impl.HomeServiceImpl2;
 

@@ -32,6 +32,7 @@ public class WebSiteApplicationInitializer extends AbstractAnnotationConfigDispa
 	
 	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException {
+		System.out.println("启动项目");
 		/**
 		 * 获取配置信息
 		 */

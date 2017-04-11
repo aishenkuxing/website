@@ -53,12 +53,11 @@ public class CommonApiController {
 		 return message;
 	 }
 	
-	
    @Cacheable("message")
    @RequestMapping("index")
    @ApiOperation(value = "首页入口", httpMethod = "GET", notes = "首页入口",tags="测试组件")
    public MessageNotice index(String msg,HttpServletRequest request){ 
-	
+	   
 	   homeServiceImpl.getVersion();
 	   MessageNotice message = new MessageNotice(1,msg);
 	   String ip = IpAddrUtil.getIpAddr(request);
